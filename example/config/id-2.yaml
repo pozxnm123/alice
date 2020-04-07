@@ -1,0 +1,15 @@
+rank: 0
+fulladdr: ""
+threshold:
+  dkg: 3
+  signer: 2
+  reshare: 3
+dkgResult:
+  share: ""
+  pubkey:
+    x: ""
+    y: ""
+  bks:
+    id-1: ""
+    id-2: ""
+    id-3: ""
