@@ -76,13 +76,13 @@ func writeDKGResult(id string, result *dkg.Result) error {
 	return nil
 }
 
-func getID(id int) string {
+func getID(id uint64) string {
 	return fmt.Sprintf("id-%d", id)
 }
 
 func getPeerIDs(selfID string) []string {
 	var peerIDs []string
-	for i := 1; i <= 3; i++ {
+	for i := uint64(1); i <= uint64(3); i++ {
 		peerID := getID(i)
 		if peerID != selfID {
 			peerIDs = append(peerIDs, peerID)
